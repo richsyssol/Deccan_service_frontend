@@ -4,35 +4,35 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [react()],
+  plugins: [react()],
 
-    resolve: {
-        alias: {
-            "@": path.resolve(__dirname, "./src"),
-        },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
     },
+  },
 
-    css: {
-        postcss: "./postcss.config.js", // Points to external postcss config
-    },
+  css: {
+    postcss: "./postcss.config.js", // Points to external postcss config
+  },
 
-    server: {
-        historyApiFallback: true,
-        port: 3000,
-        open: true,
-    },
+  server: {
+    historyApiFallback: true,
+    port: 3000,
+    open: true,
+  },
 
-    base: "/",
+  base: "/",
 
-    build: {
-        outDir: "dist",
-        assetsDir: "assets",
-        sourcemap: true,
-        chunkSizeWarningLimit: 1500, // Increase chunk size warning limit (size in KB)
-    },
+  build: {
+    outDir: "dist",
+    assetsDir: "assets",
+    sourcemap: true,
+    chunkSizeWarningLimit: 1500, // Increase chunk size warning limit (size in KB)
+  },
 
-    preview: {
-        port: 4173,
-        open: true,
-    },
+  preview: {
+    port: 4173,
+    open: true,
+  },
 });
