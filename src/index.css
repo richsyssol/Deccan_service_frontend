@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --skyBlue: #2274e0;
+  }
+
+  body {
+    @apply bg-[#eef2f8];
+  }
+
+  /* Hide scrollbar */
+  ::-webkit-scrollbar {
+    display: none; /* @apply doesn't work with pseudo-elements like this */
+  }
+}
